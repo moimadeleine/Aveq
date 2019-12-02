@@ -1,0 +1,295 @@
+body {
+    margin: 0;  
+}
+
+.main_banner {
+    background: url("img/aveq_background.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.nav {
+    display: flex;  
+    justify-content: space-between; 
+    padding: 10px; 
+    width: 85%;
+    margin: 3em auto;
+}
+
+.nav a {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    padding-right: 1.5rem;
+}
+
+.nav a:hover {
+	color: black;
+}
+
+.nav ul {
+    list-style-type: none;
+  }
+
+.nav li {
+    display: inline-block;  
+    padding-top: .7em;
+}
+
+.social-menu {
+    width: 1em;
+    vertical-align: text-bottom;
+    
+ }
+
+.logo-pic {
+    width: 14rem;
+ } 
+
+.main_slogan {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 5.5em;
+    font-weight: 100;
+    text-align: center;
+    margin: .7em auto;
+    text-transform: uppercase;
+    opacity: 0.4;
+}
+
+.main_cta {
+    width: 30%;
+    margin: 4em auto;
+}
+
+.main_cta p {
+    color: pink;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 4em auto;
+    border: 1px solid pink;
+    
+}
+
+
+	/* koniec strony głównej */ 
+
+	
+	/* ninja crew */
+
+.ninja-crew {
+    background-color: black;
+    }
+
+.ninja_crew_title {
+    font-family: 'Roboto Mono', monospace;
+    color: #1368F2;
+    font-size: 7rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.portrait {
+       width: 100%;
+      
+	}
+	
+.sygnet {
+	width: 5%;
+	margin: 4em auto;
+}	
+    
+.ninja_crew_description {
+    color: white;
+    opacity: 0.8;
+	font-family: 'Be Vietnam', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0 5em 0 5em;
+    
+}
+
+.ninja_crew_description_bold {
+	font-family: 'Be Vietnam', sans-serif;
+	color: white;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+
+.youtube {
+    
+    margin: 7em auto;
+    
+}
+
+.line {
+	width: 85%;
+	text-align: center;
+	margin: 0 auto;
+	border-top: 1px solid white;
+}
+
+.cooperation1 {
+	text-align: center;
+	margin: 4em auto;
+}
+
+.cooperation1 h1 {
+	padding-bottom: 2em;
+}
+
+.cooperation2 {
+	color: white;
+	font-family: 'Be Vietnam', sans-serif;
+	font-size: 2rem;
+	
+}
+
+.logos ul {
+	margin: 0 auto;
+
+}
+
+.logos li {
+	display: inline-block;
+	width: 20%;
+	padding: 30px;
+}
+
+
+/* mozliwości */
+
+.mozliwosci_title {
+	color: #33EBDB;
+	font-family: 'Roboto Mono', monospace;
+    font-size: 7rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+}
+
+.div_mozliwosci {
+	background-color: #33EBDB;
+	width: 100%;
+	
+}
+
+.opis_mozliwosci {
+	color: black;
+	font-family: 'Be Vietnam', sans-serif;
+	font-size: 2rem;
+	padding: 4em 3em;
+}
+
+.ninjas {
+		background-image: url("img/ninjas.jpg");
+		background-size: cover;
+		text-align: center;
+		position: relative;
+		display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  flex-direction: column;
+		  background-attachment: fixed;
+		  height: 650px;
+		overflow: hidden;
+
+	}
+	
+	.ninjas::before {
+		
+		position: absolute;
+		z-index: -2;	
+	
+	}
+
+/* kontakt */
+
+.kontakt_title {
+	color: #AB33EB;
+	font-family: 'Roboto Mono', monospace;
+    font-size: 7rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+}
+
+.p_kontakt {
+	color: #AB33EB;
+	font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+	margin-top: 0;
+	margin-left: 3em;
+}
+
+.main_cta2 {
+	width: 30%;
+    margin: 0 auto;
+}
+
+.main_cta2 p {
+	color: #AB33EB;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 4em auto;
+    border: 1px solid #AB33EB;
+}
+
+/* realizacje */
+
+.realizacje_title {
+	color: #EB336C;
+	font-family: 'Roboto Mono', monospace;
+    font-size: 7rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+
+}
+
+/* form */
+
+body {
+    background-color: grey;
+}
+
+.form_icon {
+    width: 10%;
+    margin-left: 7em;
+}
+
+
+
+/* footer */
+
+.logo_footer {
+	width: 10%;
+	padding: 10px;
+	margin-left: 6em;
+	margin-top: 3em;
+}
