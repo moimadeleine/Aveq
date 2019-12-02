@@ -1,9 +1,9 @@
 body {
-    margin: 0;  
+    margin: 0;
 }
 
 .main_banner {
-    background: url("img/aveq_background.png") no-repeat center center fixed; 
+    background: url("img/aveq_background.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -17,9 +17,9 @@ a {
 
 
 .nav {
-    display: flex;  
-    justify-content: space-between; 
-    padding: 10px; 
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
     width: 85%;
     margin: 3em auto;
 }
@@ -40,19 +40,19 @@ a {
   }
 
 .nav li {
-    display: inline-block;  
+    display: inline-block;
     padding-top: .7em;
 }
 
 .social-menu {
     width: 1em;
     vertical-align: text-bottom;
-    
+
  }
 
 .logo-pic {
     width: 14rem;
- } 
+ }
 
 .main_slogan {
     color: white;
@@ -80,13 +80,13 @@ a {
     font-weight: 100;
     margin: 4em auto;
     border: 1px solid pink;
-    
+
 }
 
 
-	/* koniec strony głównej */ 
+	/* koniec strony głównej */
 
-	
+
 	/* ninja crew */
 
 .ninja-crew {
@@ -108,14 +108,14 @@ img {
 
 .portrait {
        width: 100%;
-      
+
 	}
-	
+
 .sygnet {
 	width: 5%;
 	margin: 4em auto;
-}	
-    
+}
+
 .ninja_crew_description {
     color: white;
     opacity: 0.8;
@@ -123,7 +123,7 @@ img {
     font-size: 1.5rem;
     font-weight: 300;
     padding: 0 5em 0 5em;
-    
+
 }
 
 .ninja_crew_description_bold {
@@ -136,9 +136,9 @@ img {
 
 
 .youtube {
-    
+
     margin: 7em auto;
-    
+
 }
 
 .line {
@@ -161,7 +161,7 @@ img {
 	color: white;
 	font-family: 'Be Vietnam', sans-serif;
 	font-size: 2rem;
-	
+
 }
 
 .logos ul {
@@ -190,7 +190,7 @@ img {
 .div_mozliwosci {
 	background-color: #33EBDB;
 	width: 100%;
-	
+
 }
 
 .opis_mozliwosci {
@@ -214,12 +214,12 @@ img {
 		overflow: hidden;
 
 	}
-	
+
 	.ninjas::before {
-		
+
 		position: absolute;
-		z-index: -2;	
-	
+		z-index: -2;
+
 	}
 
 /* kontakt */
@@ -269,8 +269,27 @@ img {
     font-weight: 400;
     text-align: center;
     margin-top: 0;
-
 }
+
+.tytuly_imprez {
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  padding-top: 2em;
+}
+
+.opisy_imprez {
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+}
+
+.row {
+  margin-top: 3em;
+}
+
 
 /* form */
 
