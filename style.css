@@ -306,9 +306,36 @@ body {
 
 /* footer */
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 5em 2em 5em;
+  vertical-align: middle;
+
+}
+
 .logo_footer {
-	width: 10%;
-	padding: 10px;
-	margin-left: 6em;
-	margin-top: 3em;
+	width: 5rem;
+}
+
+.adres_footer {
+  color: white;
+  font-family: Ubuntu;
+}
+
+.footer_cta {
+  width: 30%;
+
+}
+
+.footer_cta p {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: .7em;
+  padding: .7em;
+  text-transform: uppercase;
+  font-weight: 100;
+  border: 1px solid white;
+
 }
