@@ -108,6 +108,7 @@ img {
 
 .portrait {
        width: 100%;
+       margin-bottom: -37px;
 
 	}
 
@@ -190,6 +191,7 @@ img {
 .div_mozliwosci {
 	background-color: #33EBDB;
 	width: 100%;
+  margin-bottom: -32px;
 
 }
 
