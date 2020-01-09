@@ -103,6 +103,11 @@ a {
   background-size: 400% 400%;
 }
 
+figcaption {
+  color: white;
+  font-family: 'Ubuntu';
+}
+
 
 @keyframes animatedgradient {
 0% {
@@ -374,20 +379,20 @@ body {
   border: 1px solid white;
 
 }
- 
+
 /* hamburger */
 
 @media (max-width: 576px){
 body {
     margin:0;
 }
-  
+
 .nav {
     display: block;
     width: 85%;
     z-index: 3;
 }
-  
+
 .nav ul {
     margin: 0;
     padding: 0;
@@ -395,43 +400,43 @@ body {
     list-style: none;
     overflow: hidden;
 }
-  
+
 .nav ul a {
     display: block;
     padding: 10px;
     text-decoration: none;
     color: white;
-    font-size: 0.8em;  
+    font-size: 0.8em;
 }
-  
+
 .nav ul a:hover {
     background: linear-gradient(60deg, #ff512f, #e61b54, #dd2476, #AB33EB, #0261fc, #1098ad, #33ebdb, #10ee49);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.7s ease-in-out;
 }
-  
+
 .nav .logo-pic {
     float: left;
     display: block;
-    max-width: 50%; 
+    max-width: 50%;
 }
-  
+
 .nav .menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
 }
-  
+
 .nav li {
     width: 100%;
     text-align: center;
 }
-  
+
 .nav ul .social-media{
     display: none;
 }
-  
+
 .nav .menu-icon {
     margin-top: 0;
     position: relative;
@@ -440,7 +445,7 @@ body {
     max-width: 50%;
     padding: 0;
 }
-  
+
 .nav .menu-icon .nav-icon {
     background: linear-gradient(60deg, #ff512f, #e61b54, #dd2476, #AB33EB, #0261fc, #1098ad, #33ebdb, #10ee49);
     display: block;
@@ -449,7 +454,7 @@ body {
     position: relative;
     transition: background .2s ease-out;
 }
-  
+
 .nav .menu-icon .nav-icon:before{
     background: linear-gradient(60deg, #ff512f, #e61b54, #dd2476, #AB33EB, #0261fc, #1098ad, #33ebdb, #10ee49);
     content:"";
@@ -460,7 +465,7 @@ body {
     transition: all .2s ease-out;
     top: 10px;
 }
-  
+
 .nav .menu-icon .nav-icon:after{
     background: linear-gradient(60deg, #ff512f, #e61b54, #dd2476, #AB33EB, #0261fc, #1098ad, #33ebdb, #10ee49);
     content:"";
@@ -471,41 +476,41 @@ body {
     transition: all .2s ease-out;
     top: -10px;
 }
-  
+
 .nav .menu-btn{
     display: none;
 }
-  
+
 .nav .menu-btn:checked ~ .menu{
     max-height: 240px;
 }
-  
+
 .nav .menu-btn:checked ~ .menu-icon .nav-icon{
     background: transparent;
 }
-  
+
 .nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
     transform: rotate(-45deg);
     top: 0;
 }
-  
+
 .nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
     transform: rotate(45deg);
     top: 0;
-} 
 }
-  
+}
+
 @media (max-width: 992px){
 body {
     margin:0;
 }
-      
+
 .nav {
     display: block;
     width: 85%;
     z-index: 3;
 }
-      
+
 .nav ul {
     margin: 0;
     padding: 0;
@@ -513,39 +518,39 @@ body {
     list-style: none;
     overflow: hidden;
 }
-      
+
 .nav ul a {
     display: block;
     padding: 10px;
     text-decoration: none;
     color: white;
-    font-size: 0.8em;  
+    font-size: 0.8em;
 }
-      
+
 .nav ul a:hover {
     background: linear-gradient(60deg, #ff512f, #e61b54, #dd2476, #AB33EB, #0261fc, #1098ad, #33ebdb, #10ee49);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.7s ease-in-out;
 }
-      
+
 .nav .logo-pic {
     float: left;
     display: block;
-    max-width: 50%; 
+    max-width: 50%;
 }
-      
+
 .nav .menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
 }
-      
+
 .nav li {
     width: 100%;
     text-align: center;
 }
-      
+
 .nav ul .social-media{
     display: none;
 }
@@ -553,7 +558,7 @@ body {
 input{
     display: none;
 }
-      
+
 .nav .menu-icon {
     margin-top: -8px;
     position: relative;
@@ -562,7 +567,7 @@ input{
     max-width: 50%;
     padding: 28px 20px;
 }
-      
+
 .nav .menu-icon .nav-icon {
     background: linear-gradient(60deg, #ff512f, #e61b54, #dd2476, #AB33EB, #0261fc, #1098ad, #33ebdb, #10ee49);
     display: block;
@@ -571,7 +576,7 @@ input{
     position: relative;
     transition: background .2s ease-out;
 }
-      
+
 .nav .menu-icon .nav-icon:before{
     background: linear-gradient(60deg, #ff512f, #e61b54, #dd2476, #AB33EB, #0261fc, #1098ad, #33ebdb, #10ee49);
     content:"";
@@ -582,7 +587,7 @@ input{
     transition: all .2s ease-out;
     top: 10px;
 }
-      
+
 .nav .menu-icon .nav-icon:after{
     background: linear-gradient(60deg, #ff512f, #e61b54, #dd2476, #AB33EB, #0261fc, #1098ad, #33ebdb, #10ee49);
     content:"";
@@ -593,24 +598,24 @@ input{
     transition: all .2s ease-out;
     top: -10px;
 }
-      
+
 .nav .menu-btn{
     display: none;
 }
-      
+
 .nav .menu-btn:checked ~ .menu{
     max-height: 240px;
 }
-      
+
 .nav .menu-btn:checked ~ .menu-icon .nav-icon{
     background: transparent;
 }
-      
+
 .nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
     transform: rotate(-45deg);
     top: 0;
 }
-      
+
 .nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
     transform: rotate(45deg);
     top: 0;
