@@ -1,0 +1,38 @@
+/*show on scroll for photos*/
+
+img {
+    width: 100%;
+}
+
+.show-on-scroll {
+    opacity: 0;
+    transform: translateY(4em);
+    transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+                opacity .3s .25s ease-out;
+    will-change: transform, opacity;
+}
+
+.show-on-scroll.is-visible {
+    opacity: 1;
+    transform: rotateZ(-20deg);
+    transform: rotateX(-20deg);
+}
+
+/*runcated text with dots*/
+@media (max-width: 768px){
+
+    figcaption {
+        width: 100%;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        /*text-overflow: ellipsis;*/
+        -webkit-line-clamp: 3;    
+    }
+
+    figcaption:hover {
+        /*text-overflow: unset;*/
+        -webkit-line-clamp: unset;
+    }
+    
+}
