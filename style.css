@@ -251,7 +251,7 @@ img {
   font-size: 3rem;
   font-weight: 400;
   text-align: center;
-  margin: 3em auto;
+  margin: 2em auto;
 
 }
 
@@ -758,7 +758,7 @@ input{
 
 }
 .logos img {
-  width: 50%;
+  width: 20%;
   padding-bottom: 20px;
 }
 
@@ -766,21 +766,29 @@ input{
   font-size: 2rem;
 }
 
-.mozliwosci_title {
+.ninja_crew_title {
   font-size: 4rem;
 }
 
+.mozliwosci_title {
+  font-size: 3.2rem;
+}
+
 .opis_mozliwosci {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	padding: 3em 2em;
   margin: 0;
 }
 .kontakt_title {
-  font-size: 5rem;
-}
-.realizacje_title {
   font-size: 4rem;
 }
+.realizacje_title {
+  font-size: 3.2rem;
+}
+.youtube {
+  display: none;
+}
+
 }
 
 
@@ -873,4 +881,20 @@ input{
 }
 .content-details p {
   font-size: .8rem;
-}}
+}
+
+.ninja_crew_description {
+  font-size: .75rem;
+  padding: 0 3em 0 3em;
+}
+
+.ninja_crew_description_bold {
+  font-size: 1rem;
+  padding: 0 3em 0 3em;
+}
+.sygnet {
+  width: 10%;
+  margin: 1.5em auto;
+}
+
+}
