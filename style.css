@@ -769,7 +769,7 @@ input{
 }
 
 .nav .menu-btn:checked ~ .menu{
-    max-height: 240px;
+    max-height: 650px;
 }
 
 .nav .menu-btn:checked ~ .menu-icon .nav-icon{
