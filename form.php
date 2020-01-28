@@ -21,6 +21,7 @@ session_start();
             <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Be+Vietnam:300,400,500,600,700,800&display=swap" rel="stylesheet">
 
+			<link rel="stylesheet" href="form.css" type="text/css">
 			<link rel="stylesheet" href="grid.css" type="text/css">
 			<link rel="stylesheet" href="checkbox.css" type="text/css">
 			<link rel="stylesheet" href="form.css" type="text/css">
@@ -46,56 +47,56 @@ session_start();
 					</ul>
 				</div>
             </header>
-			
+
 			<div class="form_content">
 			<?php
 			if (isset($_POST['btnSubmit'])){
 				if(!isset($_SESSION['sesja']) || (isset($_SESSION['sesja']) && $_SESSION['sesja'] != $_POST['sesja'])){
 						$_SESSION['sesja'] = $_POST['sesja'];
-				if(isset($_POST['data_od'])) { 
+				if(isset($_POST['data_od'])) {
 					$data_od = $_POST['data_od'];
 					$zamowienie = '<html><body><b>Data zlecenia</b> od: '.$data_od;
 				};
-				if(isset($_POST['data_do'])) { 
+				if(isset($_POST['data_do'])) {
 					$data_do = $_POST['data_do'];
 					$zamowienie .= ' do: '.$data_do;
 				};
-				if(isset($_POST['miejsce'])) { 
+				if(isset($_POST['miejsce'])) {
 					$miejsce = $_POST['miejsce'];
 					$zamowienie .= '<br/><b>Miejsce wydarzenia:</b> '.$miejsce;
 				};
-				if(isset($_POST['ilosc_osob'])) { 
+				if(isset($_POST['ilosc_osob'])) {
 					$ilosc_osob = $_POST['ilosc_osob'];
 					$zamowienie .= '<br/><b>Ilość osób na wydarzeniu:</b> '.$ilosc_osob;
 				};
 				$zamowienie .= '<br/><br/><b>Zamawiany sprzęt:</b>';
-				if(isset($_POST['naglosnienie'])) { 
+				if(isset($_POST['naglosnienie'])) {
 					$naglosnienie = $_POST['naglosnienie'];
 					$zamowienie .= '</br><b>Nagłośnienie:</b><br/>'.$naglosnienie;
 					};
-				if(isset($_POST['mikrofony_reka'])) { 
+				if(isset($_POST['mikrofony_reka'])) {
 					$mikrofony_reka_ilsoc = $_POST['mikrofony_reka_ilsoc'];
 					$zamowienie .='<br/>Mikrofony do ręki - ilość: '.$mikrofony_reka_ilsoc;
 					};
-				if(isset($_POST['mikrofony_glowa'])) { 
+				if(isset($_POST['mikrofony_glowa'])) {
 					$mikrofony_glowa_ilosc = $_POST['mikrofony_glowa_ilosc'];
 					$zamowienie .= '<br/>Mikrofony nagłowne - ilość: '.$mikrofony_glowa_ilosc;
 					};
-				if(isset($_POST['mikrofon_kabel'])) { 
+				if(isset($_POST['mikrofon_kabel'])) {
 					$mikrofon_kabel_ilosc = $_POST['mikrofon_kabel_ilosc'];
 					$zamowienie .= '</br>Mikrofony na kablu - ilość: '.$mikrofon_kabel_ilosc;
 					};
-				if(isset($_POST['oswietlenie_prelegentow'])) { 
-					$liczba_prelegentow = $_POST['liczba_prelegentow']; 
+				if(isset($_POST['oswietlenie_prelegentow'])) {
+					$liczba_prelegentow = $_POST['liczba_prelegentow'];
 					$szerokosc_sceny = $_POST['szerokosc_sceny'];
 					$zamowienie .= '<br/><b>Oświetlenie</b><br/>Oświetlenie prelegentów - ilość prelegnetów na scenie: '.$liczba_prelegentow;
 					$zamowienie .= '<br/>Szerokość sceny: '.$szerokosc_sceny;
 					};
-				if(isset($_POST['oswietlenie_klimat'])) { 
+				if(isset($_POST['oswietlenie_klimat'])) {
 					$wielkosc_sali = $_POST['wielkosc_sali'];
 					$zamowienie .= '<br/>Oświetlenie - klimat - wielkość sali: '.$wielkosc_sali;
 					};
-				if(isset($_POST['oswietlenie_koncert'])) { 
+				if(isset($_POST['oswietlenie_koncert'])) {
 					$oswietlenie_koncert = 'TAK';
 					$zamowienie .= '<br/>Oświetlenie koncertowe : TAK';
 					};
@@ -111,96 +112,96 @@ session_start();
 							$zamowienie .= '<br/>Języki do tłumaczenia: '.$jezyki;
 						};
 					};
-				if(isset($_POST['symultana_ilosc'])) { 
+				if(isset($_POST['symultana_ilosc'])) {
 					$symultana_ilosc = $_POST['symultana_ilosc'];
 					$zamowienie .= '<br/>'.$symultana_ilosc;
 					};
-				if(isset($_POST['symultanailosc_zestawow'])) { 
+				if(isset($_POST['symultanailosc_zestawow'])) {
 					$symultanailosc_zestawow_ilsoc = $_POST['symultanailosc_zestawow_ilsoc'];
 					$zamowienie .= '<br/>Ilość odbiorników i zestawów słuchawkowych: '.$symultanailosc_zestawow_ilsoc;
 					};
-				if(isset($_POST['systemy_dyskusyjne'])) { 
+				if(isset($_POST['systemy_dyskusyjne'])) {
 					$systemy_dyskusyjne_ilosc = $_POST['systemy_dyskusyjne_ilosc'];
 					$zamowienie .= '<br/>Ilość systemów dyskusyjnych/multifonów: '.$systemy_dyskusyjne_ilosc;
 					};
-				if(isset($_POST['systemy_do_glosowania'])) { 
+				if(isset($_POST['systemy_do_glosowania'])) {
 					$systemy_do_glosowania_ilosc = $_POST['systemy_do_glosowania_ilosc'];
 					$zamowienie .= '<br/>Systemy do głosowania ilość: '.$systemy_do_glosowania_ilosc;
 					};
-				if(isset($_POST['p3_wewnetrzny'])) { 
+				if(isset($_POST['p3_wewnetrzny'])) {
 					$p3_wewnetrzny_ilsoc = $_POST['p3_wewnetrzny_ilsoc'];
 					$p3_wewnetrzny_szerokosc = $_POST['p3_wewnetrzny_szerokosc'];
 					$p3_wewnetrzny_dlugosc = $_POST['p3_wewnetrzny_dlugosc'];
 					$zamowienie .= '<br/><b>Multimedia</b><br/>Ekran diodowy P3 wewnętrzny - ilość: '.$p3_wewnetrzny_ilsoc.' - rozmiar - '.$p3_wewnetrzny_szerokosc.' X '.$p3_wewnetrzny_dlugosc;
 					};
-				if(isset($_POST['p5_wewnetrzny'])) { 
+				if(isset($_POST['p5_wewnetrzny'])) {
 					$p5_wewnetrzny_ilsoc = $_POST['p5_wewnetrzny_ilsoc'];
 					$p5_wewnetrzny_szerokosc = $_POST['p5_wewnetrzny_szerokosc'];
 					$p5_wewnetrzny_dlugosc = $_POST['p5_wewnetrzny_dlugosc'];
 					$zamowienie .= '<br/>Ekran diodowy P5 wewnętrzny - ilość: '.$p5_wewnetrzny_ilsoc.' - rozmiar - '.$p5_wewnetrzny_szerokosc.' X '.$p5_wewnetrzny_dlugosc;
 					};
-				if(isset($_POST['p5_zewnętrzny'])) { 
+				if(isset($_POST['p5_zewnętrzny'])) {
 					$p5_zewnetrzny_ilsoc = $_POST['p5_zewnetrzny_ilsoc'];
 					$p5_zewnetrzny_szerokosc = $_POST['p5_zewnetrzny_szerokosc'];
 					$p5_zewnetrzny_dlugosc = $_POST['p5_zewnetrzny_dlugosc'];
 					$zamowienie .= '<br/>Ekran diodowy P5 zewnetrzny - ilość: '.$p5_zewnetrzny_ilsoc.' - rozmiar - '.$p5_zewnetrzny_szerokosc.' X '.$p5_zewnetrzny_dlugosc;
 					};
-				if(isset($_POST['lcd_led'])) { 
+				if(isset($_POST['lcd_led'])) {
 					$lcd_led_ilsoc = $_POST['lcd_led_ilsoc'];
 					$lcd_led_rozmiar = $_POST['lcd_led_rozmiar'];
 					$zamowienie .= '<br/>Monitory LCD/LED - ilość: '.$lcd_led_ilsoc.' - rozmiar - '.$lcd_led_rozmiar;
 					};
-				if(isset($_POST['projektor_standard'])) { 
+				if(isset($_POST['projektor_standard'])) {
 					$projektor_standard = 'TAK';
 					$zamowienie .= '<br/>Projektor standardowej mocy: TAK';
 					};
-				if(isset($_POST['projektor_duzy'])) { 
+				if(isset($_POST['projektor_duzy'])) {
 					$projektor_duzy = 'TAK';
 					$zamowienie .= '<br/>Projektor dużej mocy: TAK';
 					};
-				if(isset($_POST['ekran_ramowy'])) {  
+				if(isset($_POST['ekran_ramowy'])) {
 					$ekran_ramowy_ilsoc = $_POST['ekran_ramowy_ilsoc'];
 					$ekran_ramowy_rozmiar = $_POST['ekran_ramowy_rozmiar'];
 					$zamowienie .= '<br/>Ekran ramowy tylna/przednia projkcja - ilość: '.$ekran_ramowy_ilsoc.' - rozmiar - '.$ekran_ramowy_rozmiar;
 					};
-				if(isset($_POST['prompter'])) {  
+				if(isset($_POST['prompter'])) {
 					$prompter_ilsoc = $_POST['prompter_ilsoc'];
 					$prompter_rozmiar = $_POST['prompter_rozmiar'];
 					$zamowienie .= '<br/>prompter / podgląd dla prelegneów - ilość: '.$prompter_ilsoc.' - rozmiar - '.$prompter_rozmiar;
 					};
-				if(isset($_POST['mikser_obsluga'])) { 
+				if(isset($_POST['mikser_obsluga'])) {
 					$mikser_obsluga = 'TAK';
 					$zamowienie .= '<br/>mikser wizji/obsługa prezentacji: TAK';
 					};
-				if(isset($_POST['laptop'])) { 
+				if(isset($_POST['laptop'])) {
 					$laptop = 'TAK';
 					$zamowienie .= '<br/>Laptop do obsługi prezentacji: TAK';
 					};
-				if(isset($_POST['uwagi'])) { 
+				if(isset($_POST['uwagi'])) {
 					$uwagi = $_POST['uwagi'];
 					$zamowienie .= '<br/><br/><b>UWAGI:</b><br/>'.$uwagi;
 				};
-				if(isset($_POST['imie'])) { 
+				if(isset($_POST['imie'])) {
 					$imie = $_POST['imie'];
 					$zamowienie .= '<br/><b>Dane kontaktowe:</b><br/>'.$imie;
 				};
-				if(isset($_POST['nazwisko'])) { 
+				if(isset($_POST['nazwisko'])) {
 					$nazwisko = $_POST['nazwisko'];
 					$zamowienie .= ' '.$nazwisko;
 				};
-				if(isset($_POST['firma'])) { 
+				if(isset($_POST['firma'])) {
 					$firma = $_POST['firma'];
 					$zamowienie .= '<br/>Firma: '.$firma;
 				};
-				if(isset($_POST['numer_telefonu'])) { 
+				if(isset($_POST['numer_telefonu'])) {
 					$numer_telefonu = $_POST['numer_telefonu'];
 					$zamowienie .= '<br/>Numer telefonu: '.$numer_telefonu;
 				};
-				if(isset($_POST['email'])) { 
+				if(isset($_POST['email'])) {
 					$email = $_POST['email'];
 					$zamowienie .= '<br/>Email: '.$email.'</body></html>';
 				};
-				
+
 				//echo $zamowienie;
 
 			$mail_glowny = 'aveq_proba@o2.pl';
@@ -210,20 +211,20 @@ session_start();
 			$temat = 'Wiadomość z Aveq.pl';
 			$tresc_meila = $zamowienie;
 			$mail = new PHPMailer;
-			$mail->isSMTP();       
-			$mail->SMTPDebug = 0;                               
-			$mail->Host = 'poczta.o2.pl'; 
-			$mail->SMTPAuth = true; 
+			$mail->isSMTP();
+			$mail->SMTPDebug = 0;
+			$mail->Host = 'poczta.o2.pl';
+			$mail->SMTPAuth = true;
 			$mail->Username = $login;
-			$mail->Password = $haslo; 
+			$mail->Password = $haslo;
 			$mail->SMTPSecure = 'tls';
-			$mail->Port = 587;        
+			$mail->Port = 587;
 			$mail->setFrom($mail_glowny, 'Aveq.pl');
 			$mail->addAddress($email_do_wysylki);
 			$mail->addReplyTo($mail_glowny , 'Informacja Zwrotna Aveq.pl');
-			$mail->CharSet = "UTF-8"; 
+			$mail->CharSet = "UTF-8";
 			$mail->Subject = $temat;
-			$mail->isHTML(true);   
+			$mail->isHTML(true);
 			$mail->Body    = $tresc_meila;
 			if(!$mail->send()) {
 				  echo 'Message was not sent.';
@@ -231,9 +232,9 @@ session_start();
 			}else{
 				echo '<div class="wiadomosc_wyslana">Dziękujemy za wiadomość. Nasz ninja skotnaktuje się jak tylko odczyta wiadomość.</div>';
 			}
-				
-				
-				
+
+
+
 				}
 			}else{
 			?>
@@ -264,7 +265,7 @@ session_start();
 					<div class="row">
 						<div class="col-sm-5 form_flex_column">
 						<div class="pretty p-default">
-							
+
 							<div class="state p-primary ilosc_osob">
 								ilość osób na wydarzeniu
 							</div>
@@ -359,7 +360,7 @@ session_start();
 							<div class="form_ilosc">DŁUGOŚĆ SCENY<input type="number" min="0" class="light_ilosc_input" name="dlugosc_sceny"/></div>
 						</div>
 						</div>
-						
+
 						<div class="pretty p-default">
 								<input type="checkbox" name="oswietlenie_klimat"/>
 								<div class="state p-primary">
@@ -371,7 +372,7 @@ session_start();
 								<div class="form_ilosc">SALA<input type="number" min="0" class="light_ilosc_input" name="wielkosc_sali"/></div>
 							</div>
 						</div>
-						
+
 						<div class="pretty p-default">
 								<input type="checkbox" name="oswietlenie_koncert"/>
 								<div class="state p-primary">
@@ -380,8 +381,8 @@ session_start();
 						</div>
 						<div class="oswietlenie_koncert_opis">*nasza ninja odezwie się żeby omówić szczegóły lub prosimy o szczegółowy opis w uwagach</div>
 					</div>
-				</div>					
-					
+				</div>
+
 				<div class="form_naglowek">TŁUMACZENIA SYMULTANICZNE</div>
 				<div class="row row_symyltana">
 						<div class="col-sm-6 form_flex_column">
@@ -429,7 +430,7 @@ session_start();
 						<div class="col-sm-1 form_flex_column form_column_ilosc_mic">
 							<div class="ilosc_screen">ILOSC</div>
 							<div class="form_ilosc"><div class="ilosc_media">ILOSC</div><input type="number" min="0" name="symultanailosc_zestawow_ilsoc"/><div class="form_symultana_opis_3 media"><img src="img/i_ico.jpg" /></div><div class="form_symultana_opis_4 media">1 uczestnik to jeden odbiornik i 1 zestaw słuchawkowy</div></div>
-							
+
 						</div>
 						<div class="col-sm-2 form_flex_column_symultana_opis screen">
 							<div class="form_symultana_opis_3"><img src="img/i_ico.jpg" /></div><div class="form_symultana_opis_4">1 uczestnik to jeden odbiornik i 1 zestaw słuchawkowy</div>
@@ -479,7 +480,7 @@ session_start();
 						<div class="col-sm-2 form_flex_column form_column_ilosc_mic">
 							<div class="ilosc_screen">ILOSC</div>
 							<div class="form_ilosc"><div class="ilosc_media">ILOSC</div><input type="number" min="0" class="mod" name="p3_wewnetrzny_ilsoc"/></div>
-							
+
 						</div>
 						<div class="col-sm-4 form_flex_column form_column_ilosc_mic">
 							<div class="rozmiar_screen">ROZMIAR EKRANU</div>
@@ -566,7 +567,7 @@ session_start();
 						</div>
 						<div class="col-sm-2 form_flex_column form_column_ilosc_mic">
 							<div class="form_ilosc"><div class="ilosc_media">ILOSC</div><input type="number" min="0" name="p5_wewnetrzny_ilsoc"/></div>
-							
+
 						</div>
 						<div class="col-sm-4 form_flex_column form_column_ilosc_mic">
 							<div class="p3_wew"><div class="ilosc_media">ROZMIAR EKRANU</div>
@@ -651,7 +652,7 @@ session_start();
 						</div>
 						<div class="col-sm-2 form_flex_column form_column_ilosc_mic">
 							<div class="form_ilosc"><div class="ilosc_media">ILOSC</div><input type="number" min="0" name="p5_zewnetrzny_ilsoc"/></div>
-							
+
 						</div>
 						<div class="col-sm-4 form_flex_column form_column_ilosc_mic">
 							<div class="p3_wew"><div class="ilosc_media">ROZMIAR EKRANU</div>
@@ -736,7 +737,7 @@ session_start();
 						</div>
 						<div class="col-sm-2 form_flex_column form_column_ilosc_mic">
 							<div class="form_ilosc"><div class="ilosc_media">ILOSC</div><input type="number" min="0" name="lcd_led_ilsoc"/></div>
-							
+
 						</div>
 						<div class="col-sm-4 form_flex_column form_column_ilosc_mic">
 							<div class="p3_wew"><div class="ilosc_media">ROZMIAR EKRANU</div>
@@ -783,7 +784,7 @@ session_start();
 						</div>
 						<div class="col-sm-2 form_flex_column form_column_ilosc_mic">
 							<div class="form_ilosc"><div class="ilosc_media">ILOSC</div><input type="number" min="0" name="ekran_ramowy_ilsoc"/></div>
-							
+
 						</div>
 						<div class="col-sm-3 form_flex_column form_column_ilosc_mic">
 							<div class="p3_wew"><div class="ilosc_media">ROZMIAR EKRANU</div>
@@ -814,7 +815,7 @@ session_start();
 						</div>
 						<div class="col-sm-2 form_flex_column form_column_ilosc_mic">
 							<div class="form_ilosc"><div class="ilosc_media">ILOSC</div><input type="number" min="0" name="prompter_ilsoc"/></div>
-							
+
 						</div>
 						<div class="col-sm-4 form_flex_column form_column_ilosc_mic">
 							<div class="p3_wew"><div class="ilosc_media">ROZMIAR EKRANU</div>
@@ -887,14 +888,14 @@ session_start();
 			};
 			?>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript">
     var datefield=document.createElement("input")
     datefield.setAttribute("type", "date")
     if (datefield.type!="date"){ //if browser doesn't support input type="date", load files for jQuery UI Date Picker
         document.write('<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />\n')
         document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"><\/script>\n')
-        document.write('<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"><\/script>\n') 
+        document.write('<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"><\/script>\n')
     }
 </script>
 <script>
@@ -923,7 +924,7 @@ if (datefield.type!="date"){ //if browser doesn't support input type="date", ini
 </script>
 	<script>
 	$(document).ready(function() {
-		
+
 		$('#start').on('change', function() {
 			var poczatek = $(this).val();
 			$('#end').attr('min',poczatek);
@@ -932,10 +933,10 @@ if (datefield.type!="date"){ //if browser doesn't support input type="date", ini
 			var koniec = $(this).val();
 			$('#start').attr('max',koniec);
 		});
-	
+
 	$('#aveq_form').submit(function(e){
     //e.preventDefault();
-	
+
 	var isValid = 1;
     var imie = $('#imie').val();
     var nazwisko = $('#nazwisko').val();
