@@ -1,0 +1,299 @@
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  87% 50% no-repeat ;
+}
+input[type="date"]::-webkit-clear-button {
+ margin-right: -28px;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.error {
+  color: red;
+  margin-left: 5px;
+}
+ 
+label.error {
+  display: inline;
+}
+input {
+  border: 1px solid #c4c4c4;
+  /*border-radius: 5px;*/
+  background-color: #fff;
+  padding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+  font-size: 20px;
+}
+.required {
+  border: 2px solid #860000!important;
+}
+.form_content{
+	color: #fff;
+	width: 85%;
+	margin: 0 auto;
+	font-family: Ubuntu;
+	margin-bottom: 50px;
+}
+.form_content .row{
+	margin-top: 0px;
+}
+.button_up{
+	border: 1px solid #fff;
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px;
+}
+.lub{
+	padding: 40px;
+	text-align: center;
+}
+.form_flex{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.form_flex_column{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.form_flex_column_symultana_opis{
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+}
+.col1, .col3{
+	flex: 0 0 35%;
+}
+.form_ico{
+	margin: 100px 0 100px 0;
+}
+.form_ico img{
+	margin: 0 auto;
+	height: 50px;
+}
+.form_naglowek{
+	font-size: 20px;
+	font-weight: 700;
+	text-indent: 40px;
+	margin: 40px 0 35px 0;
+}
+.form_naglowek_uwagi{
+	font-size: 20px;
+	margin: 40px 0 10px 0;
+	color: #b3b3b3;
+}
+.pretty {
+	margin-top: 20px;
+}
+.pretty .state label:after, .pretty .state label:before {
+	content: '';
+	width: calc(1em + 5px);
+	height: calc(1em + 5px);
+}
+.pretty .state label {
+	text-indent: 2.5em;
+	padding-top: 1px;
+}
+.form_row{
+	margin-top: 40px;
+}
+.form_column_ilosc_mic{
+	margin-top: -14px;
+}
+.form_column_ilosc_mic:nth-child{
+	margin-bottom: -5px;
+}
+.form_ilosc, .p3_wew{
+	margin-top: 15px;
+}
+.form_ilosc > input{
+	width: 47px;
+	font-size: 20px;
+}
+.p3_wew > input{
+	width: 140px;
+}
+.form_jezyki >  input{
+	width: 240px;
+}
+.row_light, .row_symyltana{
+	margin-top:0;
+}
+.row_light > .col-sm-6{
+	text-align: right;
+}
+.row_symyltana > .col-sm-6{
+	text-align: right;
+}
+.light_ilosc_input, .symultana_ilosc_input{
+	margin-left: 20px;
+}
+.oswietlenie_koncert_opis{
+	text-indent: 40px;
+	margin-top: 30px;
+}
+.form_symultana_opis_1{
+	margin: 10px 0 0 0;
+    text-align: left;
+    font-size: 12px;
+    width: 200px;
+}
+.form_symultana_opis{
+	margin: 10px 0 0 -20px!important;
+    text-align: left;
+    font-size: 12px;
+}
+.form_symultana_opis img{
+	width: 15px;
+    float: left;
+    margin: 5px 5px 0 0px;
+}
+.form_symultana_opis_4{
+	margin: 17px 0 0 0;
+    text-align: left;
+    font-size: 12px;
+    width: 200px;
+}
+.form_symultana_opis_3{
+	margin: 15px 0 0 -43px!important;
+    text-align: left;
+    font-size: 12px;
+}
+
+.form_symultana_opis_3 img{
+	width: 15px;
+    float: left;
+    margin: 5px 5px 0 0px;
+}
+.form_symultana_opis_5{
+	margin: 15px 0 0 -43px!important;
+    text-align: left;
+    font-size: 12px;
+}
+textarea{
+	width: 72%;
+	min-height: 200px;
+	color: #fff;
+	background-color : #000; 
+	border-color: #b3b3b3;
+
+}
+.row_dane input[type="text"]{
+	width: 90%;
+	height: 35px;
+	color: #fff;
+	background-color : #000; 
+	border-color: #b3b3b3;
+}
+.form_dane{
+	margin-top: 30px!important;
+	color: #b3b3b3;
+}
+.button_wyslij {
+	background-color:#bcfc0d;
+	/*border-radius:12px;*/
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:23px;
+	font-weight:bold;
+	padding:11px 75px;
+	text-decoration:none;
+	margin-top: 20px;
+}
+.button_wyslij:hover {
+	background-color:#bcfc0d;
+}
+.button_wyslij:active {
+	position:relative;
+	top:1px;
+}
+input[type="date"]{
+	    width: 200px;
+    height: 40px;
+    font-size: 20px;
+}
+.ilosc_media, .media{
+	  display: none;
+  }
+  hr{
+	  display: none;
+  }
+  .wymagane{
+	  margin-top: 20px!important;
+    color: #b3b3b3;
+	font-size: 12px;
+  }
+  .wymagane_alert{
+	  font-size: 16px;
+	  color: #860000;
+	  font-weight: 700
+  }
+  .wiadomosc_wyslana{
+	  width: 90%;
+	  margin: 0 auto;
+	  text-align: center;
+	  font-size: 16px;
+	  padding:10px
+  }
+  .ilosc_osob{
+	  margin-left: 40px;
+  }
+  .form_miejsce{
+	  margin-top: 20px;
+  }
+  .miejsce_content, .miejsce_ilosc_osob{
+	  width: 250px;
+	  float: left;
+	  line-height: 40px;
+  }
+  .miejsce_input, .ilosc_osob_wyadrzenie{
+	  font-size: 20px;
+	  padding: 7px 5px;
+  }
+  .lcd_select, .p3_wewnetrzny_dlugosc, .p3_wewnetrzny_szerokosc, .p5_wewnetrzny_dlugosc, .p5_wewnetrzny_szerokosc, .p5_zewnetrzny_szerokosc, .p5_zewnetrzny_dlugosc{
+	  font-size: 20px;
+	  /*border-radius: 5px;*/
+  }
+@media (max-width: 576px) {
+  .ilosc_screen, .rozmiar_screen, .screen {
+		display: none
+  }
+  .form_column_ilosc_mic{
+		margin-top: 0px;
+  }
+  .ilosc_media{
+		display: block;
+		float: left;
+		margin-right: 10px;
+  }
+  textarea{
+	  width: 90%;
+  }
+  .col1, .col3 {
+    flex: 0 0 90%;
+}
+.media{
+	display: block;
+}
+.form_symultana_opis_1{
+	width: 90%;
+}
+.form_symultana_opis{
+	margin: 10px 0 0 0px!important;
+}
+.form_symultana_opis_3 {
+    margin: 15px 0 0 0px!important;
+}
+
+hr{
+	display: block;
+	width: 80%;
+}
+}
