@@ -1084,7 +1084,7 @@ input{
 
 /* koniec stopki !!!!!!! */
 
-@media (min-width: 1440px) {
+@media (min-width: 1366px) {
   .nav {
       margin: 3em auto;
   }
