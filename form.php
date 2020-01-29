@@ -17,9 +17,7 @@ session_start();
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="stylesheet" href="style.css" type="text/css">
 			<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap" rel="stylesheet">
-			<link href="https://fonts.googleapis.com/css?family=Be+Vietnam:300,400,500,600,700,800&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Tomorrow:100,200,300,400,500,600,700&display=swap" rel="stylesheet">
 
 			<link rel="stylesheet" href="form.css" type="text/css">
 			<link rel="stylesheet" href="grid.css" type="text/css">
@@ -31,19 +29,17 @@ session_start();
 
 			<header>
 				<div class="nav">
-						<a href="index.html"><img class="logo-pic" src="img/aveq_logo.svg"></a>
-					<ul>
-
-						<li><a href="crew.html" >ninja crew</a></li>
+					<a href="index.html"><img class="logo-pic" src="img/aveq_logo.svg"></a>
+					<input class="menu-btn" type="checkbox" id="menu-btn"/>
+					<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+					<ul class="menu">
+						<li><a href="crew.html">ninja crew</a></li>
 						<li><a href="realizacje.html" >realizacje</a></li>
 						<li><a href="mozliwosci.html" >możliwości</a></li>
 						<li><a href="kontakt.html">kontakt</a></li>
-
-						<!-- <li><a href="kontakt.html" target="_blank" ><img src="img/contact.svg" class="social-menu"></a></li>-->
-						<li><a href="https://www.instagram.com/aveqpl/" target="_blank" ><img src="img/instagram.svg" class="social-menu"></a></li>
-						<li><a href="https://www.facebook.com/AVEQpl/" target="_blank" ><img src="img/facebook.svg" class="social-menu"></a></li>
-						<!-- <li><a href="eng/index_eng.html" >eng</a></li> -->
-
+						<li class="social-media"><a href="https://www.instagram.com/aveqpl/" target="_blank" ><div class="logo-pic2"></a></li>
+						<li class="social-media"><a href="https://www.facebook.com/AVEQpl/" target="_blank" ><div class="logo-pic3"></a></li>
+						<li><a href="eng/index_eng.html">EN</a></li>
 					</ul>
 				</div>
             </header>
@@ -314,7 +310,7 @@ session_start();
 						</div>
 						<div class="col-sm-4 form_flex_column form_column_ilosc_mic">
 							<div class="ilosc_screen">ILOSC</div>
-							<div class="form_ilosc"><div class="ilosc_media">ILOSC</div><input type="number" min="0" name="mikrofony_reka_ilsoc"/></div>
+							<div class="form_ilosc"><div class="ilosc_media">ILOŚĆ</div><input type="number" min="0" name="mikrofony_reka_ilsoc"/></div>
 						</div>
 					</div>
 					<div class="row ">
@@ -327,7 +323,7 @@ session_start();
 						</div>
 						</div>
 						<div class="col-sm-4 form_flex_column form_column_ilosc_mic">
-							<div class="form_ilosc"><div class="ilosc_media">ILOSC</div><input type="number" min="0" name="mikrofony_glowa_ilosc"/></div>
+							<div class="form_ilosc"><div class="ilosc_media">ILOŚĆ</div><input type="number" min="0" name="mikrofony_glowa_ilosc"/></div>
 						</div>
 					</div>
 					<div class="row ">
@@ -340,7 +336,7 @@ session_start();
 						</div>
 						</div>
 						<div class="col-sm-4 form_flex_column form_column_ilosc_mic">
-							<div class="form_ilosc"><div class="ilosc_media">ILOSC</div><input type="number" min="0" name="mikrofon_kabel_ilosc"/></div>
+							<div class="form_ilosc"><div class="ilosc_media">ILOŚĆ</div><input type="number" min="0" name="mikrofon_kabel_ilosc"/></div>
 						</div>
 					</div>
 				</div>
@@ -355,7 +351,7 @@ session_start();
 						</div>
 						<div class="row row_light">
 						<div class="col-sm-6 form_flex_column form_column_ilosc_light">
-							<div class="form_ilosc">LICZBA PRELEGOENTÓW<input type="number" min="0" class="light_ilosc_input" name="liczba_prelegentow"/></div>
+							<div class="form_ilosc">LICZBA PRELEGENTÓW<input type="number" min="0" class="light_ilosc_input" name="liczba_prelegentow"/></div>
 							<div class="form_ilosc">SZEROKOŚĆ SCENY<input type="number" min="0" class="light_ilosc_input" name="szerokosc_sceny"/></div>
 							<div class="form_ilosc">DŁUGOŚĆ SCENY<input type="number" min="0" class="light_ilosc_input" name="dlugosc_sceny"/></div>
 						</div>
@@ -390,7 +386,7 @@ session_start();
 							<div class="form_ilosc form_jezyki">języki tłumaczeń<input type="text" class="symultana_ilosc_input" name="jezyki"/></div>
 						</div>
 						<div class="col-sm-6 form_flex_column_symultana_opis screen">
-							<div class="form_symultana_opis"><img src="img/i_ico.jpg" /></div><div class="form_symultana_opis_1">pozwoli to ustalićliczbę potrzebnych kabin 1 kabina 2 osobowa to 1 jezyk obcy</div>
+							<div class="form_symultana_opis"><img src="img/i_ico.jpg" /></div><div class="form_symultana_opis_1">pozwoli to ustalić liczbę potrzebnych kabin 1 kabina 2 osobowa to 1 jezyk obcy</div>
 						</div>
 				</div>
 				<div class="form_row">
@@ -428,8 +424,8 @@ session_start();
 						</div>
 						</div>
 						<div class="col-sm-1 form_flex_column form_column_ilosc_mic">
-							<div class="ilosc_screen">ILOSC</div>
-							<div class="form_ilosc"><div class="ilosc_media">ILOSC</div><input type="number" min="0" name="symultanailosc_zestawow_ilsoc"/><div class="form_symultana_opis_3 media"><img src="img/i_ico.jpg" /></div><div class="form_symultana_opis_4 media">1 uczestnik to jeden odbiornik i 1 zestaw słuchawkowy</div></div>
+							<div class="ilosc_screen">ILOŚĆ</div>
+							<div class="form_ilosc"><div class="ilosc_media">ILOŚĆ</div><input type="number" min="0" name="symultanailosc_zestawow_ilsoc"/><div class="form_symultana_opis_3 media"><img src="img/i_ico.jpg" /></div><div class="form_symultana_opis_4 media">1 uczestnik to jeden odbiornik i 1 zestaw słuchawkowy</div></div>
 
 						</div>
 						<div class="col-sm-2 form_flex_column_symultana_opis screen">
@@ -446,7 +442,7 @@ session_start();
 						</div>
 						</div>
 						<div class="col-sm-2 form_flex_column form_column_ilosc_mic">
-							<div class="form_ilosc"><div class="ilosc_media">ILOSC</div><input type="number" min="0" name="systemy_dyskusyjne_ilosc"/></div>
+							<div class="form_ilosc"><div class="ilosc_media">ILOŚĆ</div><input type="number" min="0" name="systemy_dyskusyjne_ilosc"/></div>
 						</div>
 					</div>
 				</div>
@@ -478,8 +474,8 @@ session_start();
 						</div>
 						</div>
 						<div class="col-sm-2 form_flex_column form_column_ilosc_mic">
-							<div class="ilosc_screen">ILOSC</div>
-							<div class="form_ilosc"><div class="ilosc_media">ILOSC</div><input type="number" min="0" class="mod" name="p3_wewnetrzny_ilsoc"/></div>
+							<div class="ilosc_screen">ILOŚĆ</div>
+							<div class="form_ilosc"><div class="ilosc_media">ILOŚĆ</div><input type="number" min="0" class="mod" name="p3_wewnetrzny_ilsoc"/></div>
 
 						</div>
 						<div class="col-sm-4 form_flex_column form_column_ilosc_mic">
@@ -566,7 +562,7 @@ session_start();
 						</div>
 						</div>
 						<div class="col-sm-2 form_flex_column form_column_ilosc_mic">
-							<div class="form_ilosc"><div class="ilosc_media">ILOSC</div><input type="number" min="0" name="p5_wewnetrzny_ilsoc"/></div>
+							<div class="form_ilosc"><div class="ilosc_media">ILOŚĆ</div><input type="number" min="0" name="p5_wewnetrzny_ilsoc"/></div>
 
 						</div>
 						<div class="col-sm-4 form_flex_column form_column_ilosc_mic">
@@ -651,7 +647,7 @@ session_start();
 						</div>
 						</div>
 						<div class="col-sm-2 form_flex_column form_column_ilosc_mic">
-							<div class="form_ilosc"><div class="ilosc_media">ILOSC</div><input type="number" min="0" name="p5_zewnetrzny_ilsoc"/></div>
+							<div class="form_ilosc"><div class="ilosc_media">ILOŚĆ</div><input type="number" min="0" name="p5_zewnetrzny_ilsoc"/></div>
 
 						</div>
 						<div class="col-sm-4 form_flex_column form_column_ilosc_mic">
@@ -736,7 +732,7 @@ session_start();
 						</div>
 						</div>
 						<div class="col-sm-2 form_flex_column form_column_ilosc_mic">
-							<div class="form_ilosc"><div class="ilosc_media">ILOSC</div><input type="number" min="0" name="lcd_led_ilsoc"/></div>
+							<div class="form_ilosc"><div class="ilosc_media">ILOŚĆ</div><input type="number" min="0" name="lcd_led_ilsoc"/></div>
 
 						</div>
 						<div class="col-sm-4 form_flex_column form_column_ilosc_mic">
@@ -783,7 +779,7 @@ session_start();
 						</div>
 						</div>
 						<div class="col-sm-2 form_flex_column form_column_ilosc_mic">
-							<div class="form_ilosc"><div class="ilosc_media">ILOSC</div><input type="number" min="0" name="ekran_ramowy_ilsoc"/></div>
+							<div class="form_ilosc"><div class="ilosc_media">ILOŚĆ</div><input type="number" min="0" name="ekran_ramowy_ilsoc"/></div>
 
 						</div>
 						<div class="col-sm-3 form_flex_column form_column_ilosc_mic">
@@ -814,7 +810,7 @@ session_start();
 						</div>
 						</div>
 						<div class="col-sm-2 form_flex_column form_column_ilosc_mic">
-							<div class="form_ilosc"><div class="ilosc_media">ILOSC</div><input type="number" min="0" name="prompter_ilsoc"/></div>
+							<div class="form_ilosc"><div class="ilosc_media">ILOŚĆ</div><input type="number" min="0" name="prompter_ilsoc"/></div>
 
 						</div>
 						<div class="col-sm-4 form_flex_column form_column_ilosc_mic">
@@ -857,7 +853,7 @@ session_start();
 				<div class="row_dane">
 					<div class="row form_dane">
 						<div class="col-sm-3">
-						Imie*<br/>
+						Imię*<br/>
 							<input type="text" name="imie" id="imie"  />
 						</div>
 						<div class="col-sm-3">

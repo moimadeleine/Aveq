@@ -957,15 +957,15 @@ input{
 	text-decoration: none;
   font-weight: 400;
   border-radius: 10px;
-	margin-left: 3em;
+	margin-left: 4em;
 	margin-bottom: .3em;
 }
 
 
-.download {
+.button_footer {
 	font-family: 'Tomorrow';
   color: black;
-	font-size: 1.5em;
+	font-size: 1.3em;
   font-weight: 400;
 	padding: .5em;
 
@@ -1039,6 +1039,12 @@ input{
 	.footer-distributed .footer-center i{
 		margin-left: 0;
 	}
+  .footer-center p a{
+    margin-left: 0;
+  }
+  .button_footer {
+    font-size: 1em;
+  }
 
 }
 /* koniec stopki !!!!!!! */
