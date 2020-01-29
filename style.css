@@ -837,7 +837,6 @@ input{
   font-size: 3.2rem;
 }
 
-
 .content-details h3 {
   font-size: 1rem;
 }
@@ -846,12 +845,12 @@ input{
 }
 
 .ninja_crew_description {
-  font-size: .75rem;
+  font-size: 1rem;
   padding: 0 3em 0 3em;
 }
 
 .ninja_crew_description_bold {
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding: 0 3em 0 3em;
 }
 .sygnet {
@@ -864,6 +863,34 @@ input{
   margin: 0;
   }
 
+  .main_cta {
+    margin-top: 4em;
+    margin-bottom: 2em;
+  }
+
+  .ninjas {
+    display: none;
+  }
+
+}
+@media (max-width: 320px){
+  .youtube iframe {
+    width: 300px;
+    height: 180px;
+    margin: 0;
+    }
+    .mozliwosci_title {
+      font-size: 2.5rem;
+    }
+    .realizacje_title {
+      font-size: 2.5rem;
+    }
+    .ninjas {
+      display: none;
+    }
+    .nav ul a {
+        font-size: 2.5em;
+    }
 }
 
 
@@ -873,14 +900,14 @@ input{
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
-	text-align: left;
+	text-align: center;
 	padding-top: 0.7em;
   padding-bottom: 0.7em;
 	padding: 55px 50px;
 }
 
 .logo-footer {
-	width: 8rem;
+	width: 9rem;
 	margin-right: 2em;
 	margin-left: 2em;
 }
@@ -898,7 +925,7 @@ input{
 
 .footer-contact {
 	font-family: 'Ubuntu';
-	font-size: 1em;
+	font-size: 1.1em;
 	color: white;
 }
 
@@ -965,7 +992,6 @@ input{
 	text-decoration: none;
   font-weight: 400;
   border-radius: 10px;
-	margin-left: 4em;
 	margin-bottom: .3em;
 }
 
@@ -1029,7 +1055,7 @@ input{
 
 /* responsive */
 
-@media (max-width: 880px) {
+@media (max-width: 992px) {
 
 	.footer-distributed{
 		font: bold 14px sans-serif;
@@ -1055,4 +1081,83 @@ input{
   }
 
 }
+
 /* koniec stopki !!!!!!! */
+
+@media (min-width: 1440px) {
+  .nav {
+      margin: 3em auto;
+  }
+
+  .nav a {
+      color: white;
+      font-family: 'Tomorrow', sans-serif;
+      font-size: 2.5em;
+      padding-left: 3rem;
+      font-weight: 400;
+      vertical-align: text-bottom;
+  }
+
+
+
+  .logo-pic {
+      width: 25rem;
+   }
+
+   .logo-pic2 {
+     display: inline-block;
+     width: 3rem;
+     height: 3rem;
+     vertical-align: baseline;
+     background: url("img/instagram.svg") no-repeat;
+
+   }
+
+   .logo-pic2:hover {
+     display: inline-block;
+     width: 3rem;
+     height: 3rem;
+     vertical-align: baseline;
+     background: url("img/instagram2.svg") no-repeat;
+
+   }
+
+   .logo-pic3 {
+     display: inline-block;
+     width: 3rem;
+     height: 3rem;
+     vertical-align: baseline;
+     background: url("img/facebook.svg") no-repeat;
+
+   }
+
+   .logo-pic3:hover {
+     display: inline-block;
+     width: 3rem;
+     height: 3rem;
+     vertical-align: baseline;
+     background: url("img/facebook2.svg") no-repeat;
+
+   }
+   .main_slogan {
+     font-size: 12em;
+     padding-top: 8rem;
+}
+.main_cta {
+
+    width: 900px;
+    height: 180px;
+
+    font-size: 3.6rem;
+    text-align: center;
+    --borderWidth: 9px;
+    position: relative;
+    border-radius: var(--borderWidth);
+    /*background: #0a0e18;*/
+    margin: auto;
+    margin-top: 6em;
+  }
+
+
+
+}
