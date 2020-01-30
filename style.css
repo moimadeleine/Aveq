@@ -100,7 +100,7 @@ a {
     text-align: center;
     padding-top: 1.2rem;
     text-transform: uppercase;
-    margin: 0;
+    margin: .5em 0;
 
 }
 
@@ -125,6 +125,7 @@ a {
     position: relative;
     border-radius: var(--borderWidth);
     /*background: #0a0e18;*/
+    margin: 2em 0;
     
   }
 
@@ -162,7 +163,7 @@ a {
 display: flex;
 justify-content: center;
 align-items: center;
-height: 50vh; 
+flex-flow: column;
 
 }
 
