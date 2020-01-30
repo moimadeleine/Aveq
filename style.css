@@ -98,9 +98,9 @@ a {
     font-size: 5em;
     font-weight: 100;
     text-align: center;
-    margin: auto;
     padding-top: 1.2rem;
     text-transform: uppercase;
+    margin: 0;
 
 }
 
@@ -125,8 +125,7 @@ a {
     position: relative;
     border-radius: var(--borderWidth);
     /*background: #0a0e18;*/
-    margin: auto;
-    margin-top: 6em;
+    
   }
 
 .main_cta p {
@@ -158,6 +157,15 @@ a {
   background-position: 0% 50%;
 }
 }
+
+.wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh; 
+
+}
+
 
 
 	/* koniec strony głównej */
