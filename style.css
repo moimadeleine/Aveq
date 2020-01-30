@@ -126,7 +126,7 @@ a {
     border-radius: var(--borderWidth);
     /*background: #0a0e18;*/
     margin: 2em 0;
-    
+    display: block; 
   }
 
 .main_cta p {
@@ -164,7 +164,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-flow: column;
-
+height: 50vh;
 }
 
 
