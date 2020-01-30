@@ -871,9 +871,8 @@ input{
   margin: 0;
   }
 
-  .main_cta {
-    margin-top: 4em;
-    margin-bottom: 2em;
+  .main_slogan {
+    margin-bottom: .5em;
   }
 
   .ninjas {
