@@ -958,7 +958,7 @@ input{
 .footer-distributed .footer-company-name{
 	color:  #8f9296;
 	font-family: 'Ubuntu';
-	font-size: .7em;
+  font-size: .7em;
 	padding-top: 4em;
 	padding-bottom: 1em;
 	margin: 0;
@@ -991,11 +991,6 @@ input{
 	margin:0;
 }
 
-.footer-distributed .footer-center p span{
-	display:block;
-	font-size:14px;
-	line-height:2;
-}
 
   .footer-center p a{
 	background: linear-gradient(60deg, #dd2476, #AB33EB, #1098ad, #33ebdb);
