@@ -98,11 +98,10 @@ a {
     font-size: 5em;
     font-weight: 100;
     text-align: center;
-    padding-top: 1.2rem;
     text-transform: uppercase;
-    margin: .5em 0;
-
 }
+
+
 
 .title_bold {
   font-weight: 500;
@@ -126,7 +125,6 @@ a {
     border-radius: var(--borderWidth);
     /*background: #0a0e18;*/
     margin: 2em 0;
-    display: block; 
   }
 
 .main_cta p {
@@ -812,7 +810,7 @@ input{
 
 @media (max-width: 992px){
 
-  .logos li {
+.logos li {
 	display: inline;
 
 }
@@ -871,13 +869,19 @@ input{
   margin: 0;
   }
 
-  .main_slogan {
-    margin-bottom: .5em;
+  .wrapper h1 {
+    margin: 0;
   }
 
   .ninjas {
     display: none;
   }
+
+  .main_cta {
+    margin: 3em;
+  }
+
+  
 
 }
 @media (max-width: 320px){
