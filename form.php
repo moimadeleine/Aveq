@@ -19,7 +19,7 @@ session_start();
 			<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Tomorrow:100,200,300,400,500,600,700&display=swap" rel="stylesheet">
 
-			<link rel="stylesheet" href="form.css" type="text/css">
+			
 			<link rel="stylesheet" href="grid.css" type="text/css">
 			<link rel="stylesheet" href="checkbox.css" type="text/css">
 			<link rel="stylesheet" href="form.css" type="text/css">
@@ -243,7 +243,7 @@ session_start();
 				<div class="form_flex form_ico">
 					<img src="img/form.svg" />
 					</div>
-				<div class="form_naglowek">Data wydarzenia</div>
+				<div class="form_naglowek">DATA WYDARZENIA</div>
 				<div class="row form_data">
 					<div class="col-sm-4">
 						od <input type="date" name="data_od" id="start" value="<?php echo date("Y-m-d"); ?>" min="<?php  echo date("Y-m-d"); ?>">
@@ -309,7 +309,7 @@ session_start();
 						</div>
 						</div>
 						<div class="col-sm-4 form_flex_column form_column_ilosc_mic">
-							<div class="ilosc_screen">ILOSC</div>
+							<div class="ilosc_screen">ILOŚĆ</div>
 							<div class="form_ilosc"><div class="ilosc_media">ILOŚĆ</div><input type="number" min="0" name="mikrofony_reka_ilsoc"/></div>
 						</div>
 					</div>
